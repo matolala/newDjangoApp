@@ -8,9 +8,9 @@ def get_collection():
     #CONNECTION_STRING = os.getenv('CONNECTION_STRING')
     #DB_NAME = os.getenv('DB_NAME')
     #COLLECTION_NAME = os.getenv('COLLECTION_NAME')
-    CONNECTION_STRING = 'mongodb://wordpress:wordpress@3.93.45.143:27017/restaurants_reviews?keepAlive=true&poolSize=30&autoReconnect=true&socketTimeoutMS=360000&connectTimeoutMS=360000'
-    DB_NAME = 'restaurants_reviews'
-    COLLECTION_NAME = 'restaurants_reviews'
+    CONNECTION_STRING = "mongodb://wordpress:wordpress@3.93.45.143:27017/restaurants_reviews?keepAlive=true&poolSize=30&autoReconnect=true&socketTimeoutMS=360000&connectTimeoutMS=360000&authSource=admin"
+    DB_NAME = "restaurants_reviews"
+    COLLECTION_NAME = "restaurants_reviews"
     
     # Create a MongoClient
     client = pymongo.MongoClient(CONNECTION_STRING)
