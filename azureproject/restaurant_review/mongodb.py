@@ -8,7 +8,7 @@ def get_collection():
     #CONNECTION_STRING = os.getenv('CONNECTION_STRING')
     #DB_NAME = os.getenv('DB_NAME')
     #COLLECTION_NAME = os.getenv('COLLECTION_NAME')
-    CONNECTION_STRING = "mongodb://wordpress:wordpress@3.93.45.143:27017/restaurants_reviews?socketTimeoutMS=360000&connectTimeoutMS=360000&authSource=admin"
+    CONNECTION_STRING = "mongodb://wordpress:wordpress@52.90.3.46:27017/restaurants_reviews?socketTimeoutMS=360000&connectTimeoutMS=360000&authSource=admin"
     DB_NAME = "restaurants_reviews"
     COLLECTION_NAME = "restaurants_reviews"
     
