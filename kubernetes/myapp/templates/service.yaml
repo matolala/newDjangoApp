@@ -11,5 +11,9 @@ spec:
       targetPort: 8000
       protocol: TCP
       name: http
+    - port: 27017
+      targetPort: 27017
+      protocol: TCP
+      name: mongodb  
   selector:
     {{- include "myapp.selectorLabels" . | nindent 4 }}
