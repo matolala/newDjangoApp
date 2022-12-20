@@ -80,11 +80,8 @@ WSGI_APPLICATION = 'azureproject.wsgi.application'
 
 DATABASES = {
    'default': {
-      'ENGINE': 'djongo'
+      'ENGINE': 'djongo',
       'NAME': 'restaurants_reviews'
-      'HOST': 'mongodb://wordpress:wordpress@3.93.45.143:27017/restaurants_reviews?authSource=admin'
-      'USER': 'wordpress'
-      'PASSWORD': 'wordpress'
    }
 }
 
