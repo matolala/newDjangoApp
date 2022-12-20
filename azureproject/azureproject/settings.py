@@ -78,7 +78,15 @@ WSGI_APPLICATION = 'azureproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {}
+DATABASES = {
+   'default': {
+      'ENGINE': 'djongo'
+      'NAME': 'restaurants_reviews'
+      'HOST': 'mongodb://wordpress:wordpress@3.93.45.143:27017/restaurants_reviews?authSource=admin'
+      'USER': 'wordpress'
+      'PASSWORD': 'wordpress'
+   }
+}
 
 
 # Password validation
