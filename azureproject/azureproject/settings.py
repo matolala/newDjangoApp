@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'azureproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-   'default': {
-      'ENGINE': 'djongo',
-      'NAME': 'restaurants_reviews'
-   }
-}
+DATABASES = {}
+  
 
 
 # Password validation
