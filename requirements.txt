@@ -1,6 +1,7 @@
 Django
 djongo
 pymongo
+dnspython
 gunicorn
 requests
 whitenoise
