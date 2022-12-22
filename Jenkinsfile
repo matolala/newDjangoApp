@@ -24,7 +24,12 @@ pipeline {
             }
         }
       
-          stage('Building image') {
+          stage('Building image') {           
+              environment {
+                        AWS_ACCESS_KEY_ID = credentials('aws_access_key_id')
+                        AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
+                         
+           }
             steps{
               script {
                 dockerImage = docker.build "${IMAGE_REPO_NAME}:${IMAGE_TAG}"
