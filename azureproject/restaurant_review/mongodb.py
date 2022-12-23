@@ -5,12 +5,12 @@ from bson import ObjectId
 
 def get_collection():
     # Get connection info from environment variables
-    #CONNECTION_STRING = os.getenv('CONNECTION_STRING')
-    #DB_NAME = os.getenv('DB_NAME')
-    #COLLECTION_NAME = os.getenv('COLLECTION_NAME')
-    CONNECTION_STRING = "mongodb://wordpress:wordpress@52.90.3.46:27017"
-    DB_NAME = "restaurants_reviews"
-    COLLECTION_NAME = "restaurants_reviews"
+    CONNECTION_STRING = os.getenv('CONNECTION_STRING')
+    DB_NAME = os.getenv('DB_NAME')
+    COLLECTION_NAME = os.getenv('COLLECTION_NAME')
+    #CONNECTION_STRING = "mongodb://wordpress:wordpress@52.90.3.46:27017"
+    #DB_NAME = "restaurants_reviews"
+    #COLLECTION_NAME = "restaurants_reviews"
     
     # Create a MongoClient
     client = pymongo.MongoClient(CONNECTION_STRING)
