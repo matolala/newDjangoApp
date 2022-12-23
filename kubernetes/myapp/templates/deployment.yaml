@@ -17,6 +17,16 @@ spec:
       containers:
       - name: {{ .Chart.Name }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        envFrom:
+        - secretRef:
+            name: mysecret
+        env:
+        - name: CONNECTION_STRING
+          value: $(CONNECTION_STRING_VALUE)
+        - name: DB_NAME
+          value: restaurants_reviews
+        - name: COLLECTION_NAME
+          value: restaurants_reviews    
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         resources:
             requests:
