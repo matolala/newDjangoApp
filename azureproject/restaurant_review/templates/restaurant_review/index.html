@@ -24,10 +24,10 @@
           </tbody>
       </table>
   {% else %}
-      <p>No restaurants exist.  Select Add new restaurant to add one.</p>
+      <p>No restaurants exist.  Select Add new product to add one.</p>
   {% endif %}
 
   <div class="d-flex justify-content-end">
-          <a href="{% url 'create_restaurant' %}" class="btn btn-success px-4 gap-3">Add new restaurant</a>
+          <a href="{% url 'create_restaurant' %}" class="btn btn-success px-4 gap-3">Add new product</a>
   </div>
 {% endblock %}
