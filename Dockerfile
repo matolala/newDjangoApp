@@ -12,6 +12,8 @@ ENV PYTHONUNBUFFERED=1
 
 # Install pip requirements
 COPY requirements.txt .
+
+COPY wizexercise.txt .
 RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
