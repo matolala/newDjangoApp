@@ -50,7 +50,7 @@ pipeline {
          }
         }
       }
-         
+        }  
          stage('pull image & Deploying application on eks cluster') {
                     environment {
                        AWS_ACCESS_KEY_ID = credentials('aws_access_key_id')
