@@ -105,7 +105,8 @@ resource "null_resource" "name" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("${path.module}/keys/devopskey.pem")
+    private_key = file("${path.module}/keys/devopskeypair.pem")
+
 
     host        = aws_instance.ec2_instance.public_ip
   }
