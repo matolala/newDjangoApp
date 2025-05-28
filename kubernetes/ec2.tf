@@ -105,7 +105,7 @@ resource "aws_instance" "ec2_instance" {
 }
 
 resource "aws_s3_bucket" "resource_name"{
-  bucket = "basirat-mongo-db-backup"
+  bucket = "matolala-mongo-db-backup"
 
   tags = {
     Name = "mongodb1_backup"
